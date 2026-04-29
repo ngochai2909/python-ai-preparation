@@ -20,8 +20,6 @@ def rewrite_query(history: list, current_question: str) -> str:
         return current_question # Lần đầu chat thì không cần sửa
         
     history_text = "\n".join(history)
-
-
     
     prompt = f"""
     Dưới đây là lịch sử trò chuyện và một câu hỏi mới. 
@@ -42,11 +40,9 @@ def rewrite_query(history: list, current_question: str) -> str:
     return response.text.strip()
 
 def chat_loop():
+    
     print("🎬 CHATBOT KỊCH BẢN PHIM ĐÃ SẴN SÀNG! (Gõ 'exit' để thoát)")
     print("="*50)
-
-
-
     
     while True:
         user_input = input("\n👤 BẠN: ")
