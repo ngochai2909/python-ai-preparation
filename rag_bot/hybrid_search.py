@@ -85,4 +85,4 @@ def hybrid_search(query: str, top_k: int = 3):
 
 if __name__ == "__main__":
     # Test tìm kiếm bằng một tên riêng hoặc 1 từ khóa chính xác có trong kịch bản của em
-    hybrid_search("Hùng")
+    hybrid_search("")
